@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Table</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/header.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="back">
+        <p class="back__text">
+          <a class="back__link" href="/index.html"
+            ><span class="material-icons">arrow_back </span></a
+          >
+        </p>
+      </div>
+      <h1 class="header__text">Tables</h1>
+    </header>
+    <table border="1" cellpadding="5px">
+      <tr>
+        <td rowspan="4">Cell 1-1</td>
+        <td colspan="2">Cell 2-1</td>
+      </tr>
+      <tr>
+        <td>Cell 2-2</td>
+        <td rowspan="2">Cell 3-2</td>
+      </tr>
+      <tr>
+        <td>Cell 2-3</td>
+      </tr>
+      <tr>
+        <td colspan="2">Cell 2-4</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Задание
+1. Сверстать  набор элементов card согласно  макета card_grid.jpg
+   Ширина макета - 1000px
+
+2. Элемент card  - согласно  макета card.jpg
+
+3. Иконку friends испльзовать с  https://fontawesome.com/icons

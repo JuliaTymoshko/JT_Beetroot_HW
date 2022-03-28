@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.material-icons {
+  font-size: 30px;
+  vertical-align: sub;
+}
+
+.header {
+  background-color: #f3f3f3;
+  padding: 1px 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.back {
+  display: flex;
+  position: absolute;
+  padding-left: 10%;
+}
+
+.back__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
