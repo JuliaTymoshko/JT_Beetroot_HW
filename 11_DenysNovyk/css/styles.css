@@ -258,7 +258,7 @@ padding: 110px 0;
   margin-bottom: 80px;
   font-weight: 600;
   background-color: black;
-  padding: 12px 30px 10px 30px;
+  padding: 10px 30px;
   border-radius: 20px;
   font-size: 1.125em;
   width: fit-content;
@@ -291,6 +291,7 @@ padding: 110px 0;
 
 .contacts__calltoaction {
   color: #828282;
+  font-size: 0.875em;
   line-height: 16px;
 
 }
