@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),url("/assets/font/Gilroy-Medium.ttf"), url("/assets/font/Gilroy-Bold.ttf");
+}
+
+/*Variables*/
+:root {
+  --fs-base: 16;
+  --c-black: #070707;
+  --c-white: #ffffff;
+}
+
+* {
+  font-family: "Gilroy", sans-serif;
+  /* border: 1px solid rgb(136, 190, 255); */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);  ;
+}
+
+body {
+  font-size: var(--fs-base) px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #828282;
+  padding: 5px;
+}
+
+a:hover {
+  color: var(--c-black);
+}
+
+/* Basic style */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: rgb(200, 200, 255); */
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #828282 1px solid;
+  padding: 0 0 30px 0;
+  font-weight: 600;
+}
+
+.header {
+  /* background-color: rgb(235, 255, 205); */
+  background-color: var(--c-white);
+  z-index: 100;
+  padding: 30px 0 0 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.introduction {
+  /* background-color: bisque; */
+  margin-top: 130px;
+  margin-bottom: 100px;
+
+}
+
+.introduction__header {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+  align-items: flex-end; 
+}
+
+.introduction__name {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.introduction__description {
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.introduction__language { 
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  transform: rotate(-90deg);
+  margin-right: 0;
+  margin-right: -34px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.aboutme {
+  background-color: #F6F6F6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.aboutme__content {
+  /* background-color: #ebe9ff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 470px;
+  text-align: center;
+  line-height: 22px;
+
+}
+
+.aboutme__title, .aboutme__subtitle {
+  margin-bottom: 1em;
+}
+
+.aboutme__subtitle:last-child {
+  margin-bottom: 0;
+}
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.skills__title {
+  margin-bottom: 70px;
+}
+
+.skills__subtitle {
+  margin-bottom: 80px;
+}
+
+/* .skills_wrapper {
+  width: 100%;
+  max-width: 166px;
+  background-color: aquamarine;
+} */
+
+.skills__group {
+/* background-color: rgb(246, 237, 255); */
+width: 166px;
+text-align: center;
+}
+
+.group__image {
+  max-width: 88px;
+  max-height: 89px;
+  margin-bottom: 25px;
+}
+
+.group__title {
+  color: #828282;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 0.875em;
+  line-height: 18px;
+  /* max-width: 80px;  */
+  /* text-align: center; */ 
+}
+
+.group__stars {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.star {
+  max-width: 25px;
+}
+
+.skills__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.portfolio {
+  background-color: #F6F6F6;
+  padding-top: 110px;
+}
+
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__title {
+  margin-bottom: 50px;
+}
+
+.portfolio__subtitle {
+  color: black;
+  font-size: 1.125em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.portfolio__sample {
+  margin-bottom: 40px;
+}
+
+.portfolio__subtitle {
+  margin-bottom: 100px;
+}
+
+.contacts {
+background-color: #ffffff;
+display: flex;
+justify-content: center;
+padding: 110px 0;
+}
+
+.contacts__content {
+  max-width: 340px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__subtitle_bottom {
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+.contact__button {
+  margin-bottom: 80px;
+  font-weight: 600;
+  background-color: black;
+  padding: 12px 30px 10px 30px;
+  border-radius: 20px;
+  font-size: 1.125em;
+  width: fit-content;
+  display: block;
+}
+
+.contact__link {
+  color: #ffffff;
+}
+
+.contact__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contacts__list {
+  margin-bottom: 45px;
+  display: flex;
+  width: 340px; /*? Не работет если через max-width, сжимает мне иконки и не хочет их растягивать в средине всего блока Contacts*/
+  justify-content: space-between;
+}
+
+.contacts__icon {
+  max-width: 40px;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
+}
+
+.contacts__calltoaction {
+  color: #828282;
+  line-height: 16px;
+
+}
