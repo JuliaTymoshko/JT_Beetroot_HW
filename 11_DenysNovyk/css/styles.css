@@ -155,15 +155,9 @@ a:hover {
   margin-bottom: 80px;
 }
 
-/* .skills_wrapper {
-  width: 100%;
-  max-width: 166px;
-  background-color: aquamarine;
-} */
-
 .skills__group {
 /* background-color: rgb(246, 237, 255); */
-width: 166px;
+/* width: 166px; */
 text-align: center;
 }
 
@@ -191,6 +185,11 @@ text-align: center;
 
 .star {
   max-width: 25px;
+  margin-right: 10px;
+}
+
+.star:last-child {
+  margin-right: 0;
 }
 
 .skills__wrapper {
@@ -277,7 +276,7 @@ padding: 110px 0;
 .contacts__list {
   margin-bottom: 45px;
   display: flex;
-  width: 340px; /*? Не работет если через max-width, сжимает мне иконки и не хочет их растягивать в средине всего блока Contacts*/
+  width: 340px; /* ? Не работет если через max-width, сжимает мне иконки и не хочет их растягивать в средине всего блока Contacts */
   justify-content: space-between;
 }
 
