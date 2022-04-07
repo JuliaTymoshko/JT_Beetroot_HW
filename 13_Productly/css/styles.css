@@ -294,8 +294,21 @@ a {
 
 /* *Animations */
 
+.animation,
+.messege2,
+.message3 {
+  transition: 0.3s;
+}
 .animation:hover {
-  fill: rgb(16, 97, 97);
+  fill: #106161;
+}
+
+.messege2:hover {
+  fill: #6f006c;
+}
+
+.message3:hover {
+  fill: rgb(80, 43, 226);
 }
 
 .product-managers {
@@ -390,4 +403,8 @@ a {
 
 .footer__navigation--item:nth-child(4) {
   margin-bottom: 0;
+}
+
+.square:hover {
+  /* transform: scale(2); */
 }
