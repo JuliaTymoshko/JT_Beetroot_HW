@@ -1,0 +1,179 @@
+/* * Variables */
+:root {
+  --c-black: #000;
+  --c-white #fff;
+  --c-grey: #808080;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid rgb(126, 223, 255); */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 48px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  padding: 5px;
+  color: var(--c-black);
+  align-items: center;
+  cursor: pointer;
+}
+
+a:active {
+  color: var(--c-grey);
+}
+
+code {
+    background-color: var(--c-grey);
+}
+
+.wrapper {
+  padding-left: 50px;
+  padding-right: 50px;
+  /* margin: auto; */
+}
+
+.cogwheel {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.6;
+  max-height: 540px;
+  max-width: 520px;
+}
+
+/* * Header styles */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  padding: 10px 50px;
+  z-index: 999;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__language {
+  margin-right: 40px;
+  font-size: 20px;
+  color: var(--c-white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--c-black);
+}
+
+.header__divider {
+  font-size: 24px;
+}
+
+/* * Block for navigation and text */
+
+.container {
+  display: flex;
+  margin-top: 120px;
+}
+
+/* * Aside styles */
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  margin-right: 100px;
+}
+
+.navigation__item {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+}
+
+.navigation__number{
+  padding: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+/* * Textblock styles */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+.main__textblock {    
+    margin-bottom: 70px;
+}
+
+.textblock__line {
+    border: none; /* Убираем границу */
+    background-color: var(--c-black); /* Цвет линии */
+    color: var(--c-black); /* Цвет линии для IE6-7 */
+    height: 10px; /* Толщина линии */
+    max-width: 80px;
+    margin-bottom: 30px;
+}
+
+.textblock__title {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.textblock__item {
+  margin-bottom: 25px;
+}
+
+.textblock__item:first-child {
+  margin-top: 25px;
+}
+
+.textblock__item:last-child {
+  margin-bottom: 0;
+}
+
+.textblock__description--1 {
+  margin-bottom: 25px;
+}
