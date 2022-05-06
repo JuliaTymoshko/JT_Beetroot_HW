@@ -1,0 +1,167 @@
+/* * Variables */
+:root {
+  --c-black: #3b3b3b;
+  --c-grey: #c9c9c9;
+  --c-white: #ffffff;
+  --c-violet: #0000ff33;
+  --c-lavander: #dfd8ff;
+  --c-darklavander: #d4a9ff;
+  --c-lightlavander: #f7f4ff;
+  /* --fs-base: 16; */
+
+  /* Media Queries: Breakpoints */
+  /* --small: 320px;
+  --phone: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --screen: 1400px;
+  --large: 1920px; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--c-black);
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  background: var(--c-lavander);
+  background: linear-gradient(
+    90deg,
+    var(--c-lavander) 0%,
+    var(--c-white) 30%,
+    var(--c-white) 100%
+  );
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 150px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo__actives {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo__input {
+  margin-right: 20px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid var(--c-violet);
+  padding: 10px 20px;
+}
+
+.todo__input:focus {
+  outline: none;
+}
+
+.todo__input::placeholder {
+  color: var(--c-lavander);
+}
+
+.todo__button {
+  white-space: nowrap;
+  max-width: fit-content;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: var(--c-lavander);
+  border: none;
+}
+
+.todo__button:hover {
+  background-color: var(--c-darklavander);
+}
+
+.todo__button:active {
+  box-shadow: 1px 1px 2px 1px var(--c-violet);
+}
+
+.todo__item {
+  background-color: var(--c-lightlavander);
+  margin-bottom: 10px;
+  padding: 10px 0 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 3 точки не работают из-за позишн флекс */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* Курсор pointer если хотим удалять при нажатии на всю строку */
+  /* cursor: pointer;  */
+}
+
+.todo__item:active {
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.material-symbols-outlined {
+  padding: 5px 8px;
+  cursor: pointer;
+  color: var(--c-grey);
+}
+
+.material-symbols-outlined::selection {
+  background-color: transparent;
+}
+
+/* * Media  */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px 50px;
+  }
+
+  .todo__button {
+    white-space: normal;
+    max-width: fit-content;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .todo__button {
+    white-space: normal;
+    padding: 10px 20px;
+    font-size: smaller;
+  }
+
+  .todo__input::placeholder {
+    font-size: smaller;
+  }
+}
