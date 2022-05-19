@@ -1,0 +1,42 @@
+mixin news()
+  section.c-news
+    .c-news__wrapper.container
+      img.c-news__image(src="./../../assets/img/news-bg.jpg" alt="background")
+      .c-news__main#news
+        +title-upline(class='upline upline--white')
+        h1.c-news__title LATEST NEWS
+        .c-news__carousel
+          +arrow-button(class='icon__border icon__border--left c-news__button' href='#')
+          // ! card is initial mixin I created
+          +card(
+            './../../assets/img/news-image-1.jpg',
+            'SEE THE UNMATCHED BEAUTY OF THE GREAT.',
+            'Free directories: directories are perfect for customers that are searching for. Having a home based business is a wonderful asset to your life.',
+            './../../assets/img/news-alja.jpg',
+            'ALJA BRUN',
+            '20 Jan 2020'
+          )
+          // ! card2 is the mixin which is rendered as an object 
+          +card2({ 
+            image: './../../assets/img/news-image-2.jpg',
+            title: 'EFFECTIVE ADVERTISING POINTERS.',
+            description: 'Having a home based business is a wonderful asset to your life. Free directories: directories are perfect for customers that are searching for.',
+            avatar: './../../assets/img/news-dominic.jpg',
+            author: 'DOMINIC FREEMAN',
+            date: '13 Dec 2019'
+            })
+          +card2({ 
+            image: './../../assets/img/news-image-3.jpg',
+            title: 'HYPNOTIZE YOURSELF INTO THE GHOST.',
+            description: 'There are many things that are important to catalog design. Having a home based business is a wonderful asset to your life.',
+            avatar: './../../assets/img/news-alice.jpg',
+            author: 'ALICE WARD',
+            date: '30 Nov 2019'
+            })
+          +arrow-button(class='icon__border icon__border--right c-news__button' href='#')
+        .circles
+          a.circle
+          a.circle
+          a.circle
+          a.circle
+          a.circle

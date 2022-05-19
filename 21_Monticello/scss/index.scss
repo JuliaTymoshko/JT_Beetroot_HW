@@ -1,0 +1,16 @@
+// Plugins
+@import './plugins/index';
+@import './variables';
+// ! Fonts
+@import './main'; // ! это подключила я
+@import './fonts';
+// ! Media
+@import './media';
+// Config
+// Mixins
+@import './mixins';
+// Plugins
+@import './plugins/index';
+// All style
+@import './elements/index';
+@import './components/index';

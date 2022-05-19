@@ -1,0 +1,13 @@
+extends ./src/_extends/common
+
+block title
+  title test
+
+block style
+  link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+  //- link(rel="stylesheet" href="./node_modules/normalize-scss/sass/normalize.scss")
+
+block content
+  +what-we-do()
+  +news()
+  +registration()

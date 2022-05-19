@@ -1,0 +1,21 @@
+include ../_includes/elements/index
+include ../_includes/components/index
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		link(rel='stylesheet' href='index.css')
+		block style
+		block title
+			title Template
+	body
+		//- include ../../assets/icons/common/symbol-defs.svg
+		.l-common
+			+banner() 
+			// * block это то, что в index.pug
+			block content
+			+footer()
+		<script src="https://kit.fontawesome.com/23872a65e8.js" crossorigin="anonymous"></script>
+		<script defer type="module" src="./index.js"></script>

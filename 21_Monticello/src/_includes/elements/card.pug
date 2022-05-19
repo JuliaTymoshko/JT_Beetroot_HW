@@ -1,0 +1,14 @@
+mixin card(image, title, description, avatar, author, date)
+  .card
+    img.card__image(src= image)
+    .card__wrapper
+      h4.card__title= title
+      p.card__description= description 
+      .card__footer
+        img.card__avatar(src= avatar)
+        .card__info
+          .card__author= author
+          .card__date= date
+
+
+//- include mixins/mixins.pug // название папки/название миксина 
